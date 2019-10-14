@@ -6,7 +6,13 @@ class Car
     @equipment = options[:equipment] #комплектация
   end
 
+  def speed_up
+    self.speed += 20
+  end
 
+  def speed_down
+    self.speed -= 10
+  end
 
   def options
     if self.color == 'blue'
@@ -16,17 +22,11 @@ class Car
     end
   end
 
+  # какое топливо
+  def fuel; end
 
-  def fuel #какое топливо
+  def service; end
 
-  end
-
-  def servis
-
-  end
-
-  def cruiz_control
-
-  end
+  def cruiz_control; end
 
 end
