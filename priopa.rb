@@ -1,4 +1,5 @@
-class Crysler < Car
+class Priopa < Car
+
   def speed_up
     self.speed + 40
   end
@@ -6,7 +7,5 @@ class Crysler < Car
   def speed_down
     self.speed - 20
   end
-  def servis
 
-  end
 end

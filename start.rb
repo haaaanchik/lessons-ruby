@@ -1,13 +1,23 @@
 require_relative "car"
 require_relative "crysler"
 require_relative "granta"
-
-car = Car.new()
-work1 = Granta.new({color: "black", speed: 200, equipment: "imeg"})
-work2 = Crysler.new({color: "white", speed: 240, equipment: "komfort"})
+require_relative "priopa"
 
 
-car.manipulation(work2,work1)
-p work1.respond_to?(:color)
-p car.respond_to?(:color)
-puts
+granta = Granta.new(color: "black", speed: 200, equipment: "imeg")
+priora = Priopa.new(color: "blue", speed: 200, equipment: "imeg")
+crysler = Crysler.new(color: "white", speed: 240, equipment: "komfort")
+
+
+p crysler.speed_up
+p crysler.speed_down
+puts '-----------------'
+p granta.speed_up
+p granta.speed_down
+puts'--------------'
+p priora.speed_up
+p priora.speed_down
+puts '-------------'
+p granta.options
+p priora.options
+
