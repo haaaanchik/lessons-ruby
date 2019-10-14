@@ -7,26 +7,32 @@ class Car
   end
 
   def speed_up
+    if speed < 300
     self.speed += 20
-  end
-
-  def speed_down
-    self.speed -= 10
-  end
-
-  def options
-    if self.color == 'blue'
-      1
-    else
-      puts 'mistake'
     end
   end
 
+  def speed_down
+    if speed > 0
+    self.speed -= 10
+    end
+  end
+
+
+
   # какое топливо
-  def fuel; end
+  def fuel
+    92
+  end
 
   def service; end
-
-  def cruiz_control; end
+  # круиз контроль
+  def cruiz_control
+    "Not found"
+  end
+  # расход топлива
+  def fuel_consuption
+    7.0
+  end
 
 end
